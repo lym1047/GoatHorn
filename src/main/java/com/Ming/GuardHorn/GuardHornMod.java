@@ -1,6 +1,6 @@
 package com.Ming.GuardHorn;
 
-import com.Ming.GuardHorn.event.VillagerHornEvent;
+import com.Ming.GuardHorn.event.GuardHornEvent;
 import com.Ming.GuardHorn.event.ZombieHitIllagers;
 import com.Ming.GuardHorn.item.ModItems;
 import com.Ming.GuardHorn.config.ModCommonConfig;
@@ -22,7 +22,7 @@ public class GuardHornMod {
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModCommonConfig.SPEC, "guardhorn-common.toml");
 
-        MinecraftForge.EVENT_BUS.register(new VillagerHornEvent());
+        MinecraftForge.EVENT_BUS.register(new GuardHornEvent());
 
         MinecraftForge.EVENT_BUS.register(new ZombieHitIllagers());
 

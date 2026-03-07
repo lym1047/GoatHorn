@@ -13,11 +13,10 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, GuardHornMod.MOD_ID);
 
-    public static final RegistryObject<Item> VILLAGER_HORN = 
+    public static final RegistryObject<Item> VILLAGER_HORN =
             ITEMS.register("guard_horn", () -> new GuardHornItem(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
-
 }
